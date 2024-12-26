@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { boolean } = require('zod');
 
 
-mongoose.connect('mongodb+srv://om:Om%401032230472@cluster0.dwoqx.mongodb.net/week5').then(()=>{
+mongoose.connect('yourMongoDnUrl').then(()=>{
     console.log(`connection successfull !`);
 }).catch((err)=>{
     console.log(`error connecting to the mongoDB ${err}`);
